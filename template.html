@@ -6,14 +6,20 @@
     <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
+	<div id="li">
     <h1 class="app-title">チャット</h1>
-    <ul>
-      <!-- posts -->
-    </ul>
+    <!-- posts -->
     <form action="/send" method="post">
       <input id="message-input" type="text" name="message" />
       <button type="submit">送信</button>
+	</form>
+    <form action="/send" method="post">
+    <input id="message-input" type="text" name="thread" />
+      <button type="submit">スレッド名を入力</button>
     </form>
+     <!-- thread list -->
+	</div>	
+
     <script src="/script.js"></script>
   </body>
 </html>
